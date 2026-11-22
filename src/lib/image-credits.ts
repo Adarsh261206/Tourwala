@@ -137,6 +137,25 @@ export const imageCredits: ImageCredit[] = [
     licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
   },
   {
+    file: "jaipur-city-palace.jpg",
+    label: "Jaipur — City Palace",
+    title:
+      "File:Peacock sculptures, Pitam Niwas Chowk, City Palace, Jaipur, 20191218 1001 9063.jpg",
+    url: "https://commons.wikimedia.org/wiki/File:Peacock_sculptures,_Pitam_Niwas_Chowk,_City_Palace,_Jaipur,_20191218_1001_9063.jpg",
+    artist: "Jakub Hałun",
+    license: "CC BY-SA 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+  },
+  {
+    file: "jaipur-jal-mahal.jpg",
+    label: "Jaipur — Jal Mahal",
+    title: "File:Jal Mahal effect.jpg",
+    url: "https://commons.wikimedia.org/wiki/File:Jal_Mahal_effect.jpg",
+    artist: "Vinitsharma98",
+    license: "CC BY-SA 4.0",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+  },
+  {
     file: "japan-fuji.jpg",
     label: "Japan — Mount Fuji",
     title: "File:Mount Fuji at sunset, March 2025.jpg",

@@ -49,6 +49,8 @@ const typeFilters = [
   "Weekend",
   "Friends",
   "Corporate",
+  "Students",
+  "MICE",
 ];
 
 function JourneysPage() {

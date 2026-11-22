@@ -22,6 +22,8 @@ import thailandImg from "@/assets/dest-thailand.jpg";
 import switzerlandImg from "@/assets/dest-switzerland.jpg";
 import maldivesImg from "@/assets/dest-maldives.jpg";
 import japanImg from "@/assets/dest-japan.jpg";
+import jaipurCityPalaceImg from "@/assets/jaipur-city-palace.jpg";
+import jaipurJalMahalImg from "@/assets/jaipur-jal-mahal.jpg";
 import keralaVarkalaImg from "@/assets/kerala-varkala.jpg";
 import ladakhPangongImg from "@/assets/ladakh-pangong.jpg";
 import ladakhThikseyImg from "@/assets/ladakh-thiksey.jpg";
@@ -133,6 +135,36 @@ export const destinations: Destination[] = [
       "Optional: Mount Abu, Chittorgarh, Bikaner and Ranthambore",
     ],
     route: "Jaipur → Ajmer → Pushkar → Jodhpur → Jaisalmer → Ranakpur → Udaipur",
+  },
+  {
+    slug: "jaipur",
+    name: "Jaipur",
+    state: "Amber · Nahargarh · Jal Mahal",
+    region: "domestic",
+    tagline: "The Pink City, at an easy pace.",
+    summary:
+      "Amber Fort at sunrise, Hawa Mahal and the City Palace, then bazaars and a Nahargarh sunset — Jaipur in two or three unhurried days.",
+    image: jaipurImg,
+    gallery: [jaipurImg, jaipurAmberFortImg, jaipurCityPalaceImg, jaipurJalMahalImg],
+    bestTime: "October – March",
+    idealDays: "2 – 4 days",
+    priceFrom: 11999,
+    categories: ["Heritage", "Family", "Weekend"],
+    highlights: [
+      "Amber Fort and Maota Lake",
+      "Hawa Mahal and the Pink City lanes",
+      "City Palace and the Peacock Gate",
+      "Jantar Mantar UNESCO observatory",
+      "Jal Mahal at sunset",
+      "Nahargarh Fort viewpoint",
+      "Jaigarh Fort and the world's largest cannon",
+      "Albert Hall Museum and Ram Niwas Garden",
+      "Patrika Gate and Galta Ji",
+      "Johari and Bapu Bazaar shopping",
+      "A Rajasthani food walk: pyaaz kachori, dal baati and lassi",
+      "Optional: Abhaneri stepwell and Ranthambore",
+    ],
+    route: "Jaipur → Amber → Nahargarh",
   },
   {
     slug: "kerala",
@@ -712,6 +744,42 @@ export const journeys: Journey[] = [
     exclusions: [...standardExclusions, "Desert camp upgrades"],
   },
   {
+    slug: "jaipur-pink-city",
+    title: "Jaipur: The Pink City",
+    destinationSlug: "jaipur",
+    destinationName: "Jaipur",
+    region: "domestic",
+    days: 3,
+    nights: 2,
+    price: 12999,
+    image: jaipurImg,
+    summary:
+      "Amber Fort, Hawa Mahal, City Palace and a Nahargarh sunset — three easy days in Jaipur, with the bazaars and a food walk built in.",
+    tags: ["Heritage", "Weekend", "Family"],
+    route: "Jaipur → Amber → Nahargarh",
+    bestTime: "October – March",
+    idealFor: "First-time Jaipur visitors, couples and families",
+    itinerary: [
+      {
+        day: 1,
+        title: "Pink City arrival",
+        body: "Airport or station pickup, City Palace and Jantar Mantar, Hawa Mahal and Johari Bazaar; Nahargarh Fort at sunset.",
+      },
+      {
+        day: 2,
+        title: "Amber and the old city",
+        body: "Amber Fort and Maota Lake, Jaigarh Fort, Jal Mahal and Albert Hall; a Rajasthani food walk in the evening.",
+      },
+      {
+        day: 3,
+        title: "Crafts and departure",
+        body: "Patrika Gate or Galta Ji, a block-print or blue-pottery workshop, and transfer to the airport.",
+      },
+    ],
+    inclusions: domesticInclusions,
+    exclusions: standardExclusions,
+  },
+  {
     slug: "kerala-backwaters-hills",
     title: "Kerala: Backwaters & Hills",
     destinationSlug: "kerala",
@@ -881,7 +949,7 @@ export const journeys: Journey[] = [
     image: goaImg,
     summary:
       "North Goa's beaches, Old Goa's churches and Fontainhas, a Dudhsagar Falls day and the quiet south — a short trip with range.",
-    tags: ["Beaches", "Friends", "Honeymoon", "Corporate"],
+    tags: ["Beaches", "Friends", "Honeymoon", "Corporate", "Students", "MICE"],
     route: "North Goa → Old Goa → South Goa",
     bestTime: "November – February",
     idealFor: "Friends, couples and long weekends",
@@ -922,7 +990,7 @@ export const journeys: Journey[] = [
     image: himachalImg,
     summary:
       "Shimla's Ridge, Kufri's pines, Manali's cafés, Solang Valley and the Atal Tunnel — a hill holiday without the early bus rush.",
-    tags: ["Hills", "Family", "Adventure"],
+    tags: ["Hills", "Family", "Adventure", "Students"],
     route: "Shimla → Kufri → Manali → Solang → Sissu",
     bestTime: "March – June · September – November",
     idealFor: "Families, friends and first-time hill travellers",
@@ -969,7 +1037,7 @@ export const journeys: Journey[] = [
     image: andamanImg,
     summary:
       "Cellular Jail, Radhanagar's sunsets, Elephant Beach's reef and Neil Island's quiet coves — ferries and beach days worked out.",
-    tags: ["Beaches", "Honeymoon", "Family"],
+    tags: ["Beaches", "Honeymoon", "Family", "Students"],
     route: "Port Blair → Havelock → Neil Island → Port Blair",
     bestTime: "October – May",
     idealFor: "Honeymooners, families and friends",
@@ -1016,7 +1084,7 @@ export const journeys: Journey[] = [
     image: meghalayaImg,
     summary:
       "Guwahati's temples, Shillong's music, Cherrapunji's waterfalls, the living root bridges and the Umngot river at Dawki.",
-    tags: ["Hills", "Adventure", "Nature"],
+    tags: ["Hills", "Adventure", "Nature", "Students"],
     route: "Guwahati → Shillong → Cherrapunji → Dawki → Shillong",
     bestTime: "October – April",
     idealFor: "Nature lovers, friends and active families",
@@ -1226,7 +1294,7 @@ export const journeys: Journey[] = [
     image: dubaiImg,
     summary:
       "Burj Khalifa, the desert and a beach day — plus old Dubai's souks, the Museum of the Future and a dhow cruise.",
-    tags: ["Family", "City", "Luxury", "Corporate"],
+    tags: ["Family", "City", "Luxury", "Corporate", "MICE"],
     route: "Dubai Marina → Downtown → Desert → Old Dubai",
     bestTime: "November – March",
     idealFor: "First-time international travellers and families",
@@ -1268,7 +1336,7 @@ export const journeys: Journey[] = [
     image: baliImg,
     summary:
       "Ubud's rice terraces, a Nusa Penida island day, Uluwatu's Kecak sunset and Seminyak's beach clubs — the easy, romantic Bali.",
-    tags: ["Honeymoon", "Beaches", "Nature"],
+    tags: ["Honeymoon", "Beaches", "Nature", "Corporate", "MICE"],
     route: "Seminyak → Ubud → Nusa Penida → Seminyak",
     bestTime: "April – October",
     idealFor: "Honeymooners and couples",
@@ -1315,7 +1383,7 @@ export const journeys: Journey[] = [
     image: thailandImg,
     summary:
       "Temples and street food in Bangkok, then Krabi, Phi Phi and Phuket — longtail boats, limestone cliffs and a proper beach finish.",
-    tags: ["Beaches", "Friends", "Family", "Corporate"],
+    tags: ["Beaches", "Friends", "Family", "Corporate", "MICE"],
     route: "Bangkok → Krabi → Phi Phi → Phuket",
     bestTime: "November – April",
     idealFor: "Friends, couples and families",
@@ -1638,6 +1706,14 @@ export const experiences: Experience[] = [
     tags: ["Friends"],
   },
   {
+    slug: "students",
+    title: "Student groups",
+    line: "College and school trips planned around the group chat and the budget.",
+    note: "Goa · Andaman · Himachal",
+    image: andamanImg,
+    tags: ["Students"],
+  },
+  {
     slug: "weekend",
     title: "Weekend breaks",
     line: "Two nights that feel like a proper reset.",
@@ -1647,16 +1723,16 @@ export const experiences: Experience[] = [
   },
   {
     slug: "corporate",
-    title: "Corporate & incentives",
-    line: "Offsites and reward trips, handled end to end.",
-    note: "Thailand · Dubai · Bali",
-    image: thailandImg,
-    tags: ["Corporate"],
+    title: "Corporate & MICE",
+    line: "Offsites, incentives, conferences and exhibitions, handled end to end.",
+    note: "Dubai · Thailand · Bali",
+    image: dubaiImg,
+    tags: ["Corporate", "MICE"],
   },
 ];
 
 export const stats = [
-  { value: 18, suffix: "+", label: "handpicked destinations", note: "India and abroad" },
+  { value: 19, suffix: "+", label: "handpicked destinations", note: "India and abroad" },
   { value: 3, suffix: "", label: "simple steps", note: "From idea to itinerary" },
   { value: 1, suffix: "", label: "point of contact", note: "First call to last drop" },
   { value: 7, suffix: "", label: "days open", note: "10:30 am – 7:00 pm" },

@@ -18,7 +18,7 @@ type Region = "domestic" | "international";
 
 const title = "Tour Destinations — India First, Then the World | Tourwala Travels";
 const description =
-  "Explore 12 India destinations and handpicked international holidays. Filter by hills, beaches, heritage, pilgrimage and adventure, then get a free itinerary from Tourwala Travels in Thane.";
+  "Explore 13 India destinations and handpicked international holidays. Filter by hills, beaches, heritage, pilgrimage and adventure, then get a free itinerary from Tourwala Travels in Thane.";
 
 export const Route = createFileRoute("/destinations/")({
   validateSearch: (search: Record<string, unknown>): { region?: Region } => {
@@ -65,9 +65,9 @@ function DestinationsPage() {
             <span className="italic text-gold-soft">Then the world.</span>
           </>
         }
-        description="Twelve places we know closely in India, and a short list of international holidays we plan often. Pick a place, see the route, then ask us for a real itinerary."
+        description="Thirteen places we know closely in India, and a short list of international holidays we plan often. Pick a place, see the route, then ask us for a real itinerary."
         meta={[
-          { label: "India", value: "12 destinations" },
+          { label: "India", value: "13 destinations" },
           { label: "International", value: "6 destinations" },
           { label: "Office", value: "Thane West" },
         ]}

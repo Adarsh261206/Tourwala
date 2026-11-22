@@ -46,7 +46,8 @@ const tripTypes = [
   { value: "Honeymoon", note: "Couple, private stays" },
   { value: "Friends", note: "Group, good stories" },
   { value: "Pilgrimage", note: "Darshan, comfortable" },
-  { value: "Corporate", note: "Offsite or incentive" },
+  { value: "Corporate", note: "Offsite, incentive or MICE" },
+  { value: "Students", note: "College or school group" },
   { value: "Solo", note: "Your own pace" },
 ];
 
