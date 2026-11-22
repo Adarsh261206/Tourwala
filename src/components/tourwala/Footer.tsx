@@ -126,6 +126,9 @@ export function Footer() {
             >
               {BRAND.website}
             </a>
+            <Link to="/credits" className="transition-colors hover:text-gold-soft">
+              Image credits
+            </Link>
           </p>
         </div>
 

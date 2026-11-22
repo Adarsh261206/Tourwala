@@ -60,6 +60,10 @@ The production build can be verified locally with:
 VERCEL=1 bun run build
 ```
 
+## Image credits
+
+Wikimedia Commons sources and licences are documented in [`IMAGE_CREDITS.md`](./IMAGE_CREDITS.md) and on the `/credits` page.
+
 ## Contact
 
 Tourwala Travels · Thane West, Thane 400601

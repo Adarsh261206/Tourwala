@@ -78,6 +78,8 @@ function DestinationPage() {
     .filter((item) => item.slug !== d.slug && item.region === d.region)
     .slice(0, 3);
   const regionLabel = d.region === "domestic" ? "India" : "International";
+  const gallery = d.gallery.slice(0, 4);
+  const hasOddSmall = (gallery.length - 1) % 2 === 1;
 
   return (
     <main>
@@ -165,26 +167,31 @@ function DestinationPage() {
             </div>
 
             <div className="grid grid-cols-2 gap-3">
-              {d.gallery.slice(0, 4).map((image, index) => (
-                <div
-                  key={`${image}-${index}`}
-                  className={cn(
-                    "overflow-hidden bg-maroon-deep",
-                    index === 0
-                      ? "col-span-2 aspect-[16/10] rounded-[1.6rem]"
-                      : "aspect-square rounded-[1.3rem]",
-                  )}
-                >
-                  <img
-                    src={image}
-                    alt={`${d.name} view ${index + 1}`}
-                    width={1600}
-                    height={1000}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105"
-                  />
-                </div>
-              ))}
+              {gallery.map((image, index) => {
+                const wideLast = hasOddSmall && index === gallery.length - 1;
+                return (
+                  <div
+                    key={`${image}-${index}`}
+                    className={cn(
+                      "overflow-hidden bg-maroon-deep",
+                      index === 0
+                        ? "col-span-2 aspect-[16/10] rounded-[1.6rem]"
+                        : wideLast
+                          ? "col-span-2 aspect-[16/9] rounded-[1.3rem]"
+                          : "aspect-square rounded-[1.3rem]",
+                    )}
+                  >
+                    <img
+                      src={image}
+                      alt={`${d.name} view ${index + 1}`}
+                      width={1600}
+                      height={1000}
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105"
+                    />
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
